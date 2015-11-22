@@ -1,0 +1,65 @@
+{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>:: Devops Tools ::</title> 
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="{% static 'tooplate_style.css' %}" />
+</head>
+<body> 
+
+<div id="tooplate_header_wrapper">
+
+    <div id="tooplate_header">
+    
+        <div id="site_title">
+        
+        	<h1><a href="#">Ansible Tower Plus<span>Verizon Data Services India Pvt Ltd.</span></a></h1>
+        
+        </div>
+        
+        <div id="header_phone_no">
+			      
+        </div>
+        
+        <div class="cleaner_h10"></div>
+        
+        <div id="tooplate_menu">
+        	
+            <div id="home_menu"><a href="#"></a></div>
+                
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="ApplicationMaster.html" >Services</a></li>					
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>    	
+        
+        </div> <!-- end of tooplate_menu -->
+        
+    </div>	  
+</div> <!-- end of header_wrapper -->
+<div id="tooplate_main">
+    
+ <div  align="center">        
+    {% block contententry %}{% endblock %}
+</div>
+
+    <div class="cleaner"></div>  
+
+<div id="tooplate_footer_wrapper">
+
+
+     <div id="tooplate_footer">
+    
+        Copyright © 2015 <a href="#">Verizon
+    
+    </div> <!-- end of tooplate_footer -->
+
+</div> 
+    </div>
+</body>
+</html>

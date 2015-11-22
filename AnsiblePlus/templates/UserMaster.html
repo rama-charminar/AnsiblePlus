@@ -1,0 +1,41 @@
+{% extends 'basemaster/masterstyle.html' %}
+{% block contententry %}
+<form action="/SaveUserMaster/" method="post">{% csrf_token %}
+<table  cellpadding='5' cellspacing='5' width='95%'>
+					<tr>
+						<td>
+						<h2>User Master</h2>
+						</td>
+					</tr>
+					<tr>
+					<td><hr/></td>
+					</tr>
+					
+					
+					<tr>
+						<td>
+							<table>
+								<tr>
+								<td>UserName</td><td><input type="text" name="UserName" style="width:250px;"></td>
+								</tr>
+								<tr>
+								<td>User Email</td><td><input type="text" name="UserEmail" style="width:250px;"></td>
+								</tr>
+								<tr>
+								<td>User Vzid</td><td><input type="text" name="userEID"></td>
+								</tr>								
+								<tr>
+								<td></td><td><input type="submit" value="Submit"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+					<td><hr/></td>
+					</tr>
+				</table>
+</form>
+	{% endblock %}
+        
+    
+    

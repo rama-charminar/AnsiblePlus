@@ -1,0 +1,55 @@
+h1, p, body, html {
+	margin:0;
+	padding:0;}
+
+/*Just visual styles*/
+body {
+	background:#cccc66;
+	font:12px verdana, sans-serif;
+	color:#000;
+	}
+
+/*Our full length header. 
+We align the text center so it shows up in the middle. 
+If you prefer you could right or left align it.*/	
+#headerbg {
+	background:#cccc66;
+	text-align:center;
+	padding:20px;
+	}
+	
+/*Center Content*/	
+#container {
+	position:relative;
+	margin:0 auto;
+	width:800px;
+	}
+
+/*Full width footer*/	
+#footer {
+	background:#cccc66;
+	padding:10px;
+	text-align:center;
+	}
+
+/*These are just styles used for the example for the content.*/	
+.left {
+	float:left;
+	width:500px;
+	background:#ccff66;
+	}
+	
+.right {
+	float:left;
+	width:200px;
+	clear:right;
+	background:#66ff33;
+	}
+	
+.left p, .right p {
+	padding:10px;
+	}
+	
+/*If you are going to use floats then you will NEED to clear the 
+footer so it doesn't bunch the content up*/
+.clear {clear:both;}

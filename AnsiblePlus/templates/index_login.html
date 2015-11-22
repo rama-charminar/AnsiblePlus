@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    </head>
+  <body>
+
+    <!--Google Font - Work Sans-->
+<link rel="stylesheet" type="text/css" href="{% static 'css/fontStyle.css' %}" />
+<div class="container">
+  <div class="profile">
+    <button class="profile__avatar" id="toggleProfile">
+     <img src="{% static 'images/verizonlogo.jpg' %}" alt="Avatar" /> 
+    </button>
+    <div class="profile__form">
+      <div class="profile__fields">
+        <div class="field">
+          <input type="text" id="fieldUser" class="input" required pattern=.*\S.* />
+          <label for="fieldUser" class="label">Username</label>
+        </div>
+        <div class="field">
+          <input type="password" id="fieldPassword" class="input" required pattern=.*\S.* />
+          <label for="fieldPassword" class="label">Password</label>
+        </div>
+        <div class="profile__footer">
+          <button class="btn">Login</button>
+        </div>
+      </div>
+     </div>
+  </div>
+</div>
+    
+        <script src="{% static 'js/index.js' %}"></script>
+    
+    
+  </body>
+</html>
